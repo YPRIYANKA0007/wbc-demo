@@ -13,5 +13,5 @@ print(loginReq)
 print(PRISMA_ACCESS_KEY)
 
 main = rule {
-  loginReq 
+  loginResp
   }
