@@ -9,7 +9,7 @@ loginResp = json.unmarshal(http.post(loginReq).body)
 req = http.request("https://api2.prismacloud.io/bridgecrew/api/v1/tfCloud/sentinel/ws-CufvtnYExniAGRoZ").with_header("Authorization", loginResp.token)
 resp = json.unmarshal(http.get(req).body)
 
-print(loginReq)
+print(resp)
 print(PRISMA_ACCESS_KEY)
 
 main = rule {
