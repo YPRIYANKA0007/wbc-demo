@@ -16,6 +16,7 @@ if (length(resp.violations) > 0) {
         print("Violation ID: " + violation.violation_id)
         print("\n")
     }
+}    
 print("More details: " + resp.details_url)  
 main = rule { length(resp.violations) < 1 } 
 
